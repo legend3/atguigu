@@ -1,0 +1,19 @@
+package com.atguigu.boot.bean;
+
+import lombok.*;
+
+@EqualsAndHashCode  //重写equals和hashcode
+@NoArgsConstructor  //无参构造器
+//@AllArgsConstructor //全参构造器
+@ToString
+@Data
+public class User {
+    private String name;
+    private Integer age;
+    private Pet pet;
+
+    public User(String name, Integer age) {
+        this.name = name;
+        this.age = age;
+    }
+}

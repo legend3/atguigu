@@ -1,0 +1,6 @@
+#spring:
+# mvc:
+#  static-path-pattern: /res/** # 设置静态资源访问前缀
+# web:/: [classpath:/haha/] # 改变默认的(本应用模块)静态资源路径(/static、/public、/resources、/META-INF/resources均不再生效，而是/haha目录了)
+# 同理，第三方jar的静态资源访问: E:\Apache\apache-maven-3.8.1\repository\org\webjars\jquery\3.6.0\jquery-3.6.0.jar!\META-INF\resources\webjars\jquery\3.6.0\jquery.js
+  # http://localhost:8080/webjars/jquery/3.6.0/jquery.js
